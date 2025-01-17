@@ -131,3 +131,56 @@ public class AvlTree {
     }
 
 }
+/* 
+1. rightRotate Method:
+This method performs a right rotation on a given node p. A right rotation is used when the left subtree of p is too tall, causing an imbalance.
+
+Code Explanation:
+
+public Node rightRotate(Node p) {
+    Node c = p.left; // `c` is the left child of `p`.
+    Node t = c.right; // `t` is the right child of `c`.
+Identify the node c, which is the left child of the node p that we want to rotate.
+t is the right subtree of c. During rotation, this subtree will be reassigned.
+
+    c.right = p; // Make `p` the right child of `c`.
+    p.left = t;  // Reassign the left child of `p` to `t` (the previous right subtree of `c`).
+The subtree rooted at c becomes the new root, and p is rotated down to become the right child of c.
+The previous right subtree of c (t) is now the left child of p.
+
+    p.height = Math.max(height(p.left), height(p.right) + 1);
+    c.height = Math.max(height(c.left), height(c.right) + 1);
+Update the heights of p and c. The height of a node is determined by the maximum height of its left and right subtrees, plus 1.
+
+    return c; // Return the new root of the rotated subtree.
+}
+The new root after the right rotation is c.
+*/
+
+/*2. leftRotate Method:
+This method performs a left rotation on a given node c. A left rotation is used when the right subtree of c is too tall, causing an imbalance.
+
+Code Explanation:
+java
+Copy code
+public Node leftRotate(Node c) {
+    Node p = c.right; // `p` is the right child of `c`.
+    Node t = p.left; // `t` is the left child of `p`.
+Identify the node p, which is the right child of the node c that we want to rotate.
+t is the left subtree of p. During rotation, this subtree will be reassigned.
+java
+Copy code
+    p.left = c; // Make `c` the left child of `p`.
+    c.right = t; // Reassign the right child of `c` to `t` (the previous left subtree of `p`).
+The subtree rooted at p becomes the new root, and c is rotated down to become the left child of p.
+The previous left subtree of p (t) is now the right child of c.
+java
+Copy code
+    p.height = Math.max(height(p.left), height(p.right) + 1);
+    c.height = Math.max(height(c.left), height(c.right) + 1);
+Update the heights of p and c.
+java
+Copy code
+    return p; // Return the new root of the rotated subtree.
+}
+The new root after the left rotation is p. */
