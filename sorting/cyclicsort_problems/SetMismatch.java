@@ -4,7 +4,7 @@ public class SetMismatch {
         int i = 0;
         while(i <arr.length){
             int correct = arr[i]-1;//index
-            if(arr[i] != arr[correct]){
+            if(arr[i] != arr[correct]){//check
                 swap(arr,i,correct);
             }else{
                 i++;
