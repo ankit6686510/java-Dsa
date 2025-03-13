@@ -1,4 +1,3 @@
-package Lecture_19;
 import java.util.Scanner;
 
 public class SpiralMatrix {
