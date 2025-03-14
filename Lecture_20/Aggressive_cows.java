@@ -14,7 +14,7 @@ public class Aggressive_cows {
 			int nos = sc.nextInt();// number of stall
 			int noc = sc.nextInt();// number of cows
 			int[] stall = new int[nos];
-			for (int i = 0; i < stall.length; i++) {
+			for (int i = 0; i < stall.length; i++) { //stall position input
 				stall[i] = sc.nextInt();
 			}
 			Arrays.sort(stall);// sort kr dega
