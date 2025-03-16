@@ -59,6 +59,8 @@ Java is a versatile, object-oriented programming language widely used for applic
    - Basics and memory allocation
    - Types: single-dimensional, multi-dimensional
    - Operations: insertion, deletion, traversal
+1'.**Binary search**:
+
 
 2. **Strings**:
    - Immutable vs. mutable strings
