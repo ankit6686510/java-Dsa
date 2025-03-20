@@ -7,7 +7,7 @@ public class arrays_intro {
         Scanner scn  = new Scanner(System.in);
         int n = scn.nextInt();
         int[] arr = new int[n];
-        for(int i = 0 ;i < arr.length; i++){
+        for(int i = 0 ;i < arr.length; i++){ //input
             arr[i] = scn.nextInt();
         }
         display(arr);
