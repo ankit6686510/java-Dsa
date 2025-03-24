@@ -1,43 +1,69 @@
-    package lecture_11_Arrays;
+package lecture_11_Arrays;
 
-    import java.util.Scanner;
+import java.util.Scanner;
 
-    public class ArmstrongNuber {
-        public static void main(String[] args) {
-            Scanner scn = new Scanner(System.in);
-            int n = scn.nextInt();
-            // System.out.println(countdigit(n));
-            System.out.println(is_armsstrong_number(n));
+/**
+ * This class checks if a number is an Armstrong number.
+ * An Armstrong number is a number that is equal to the sum of its own digits 
+ * each raised to the power of the number of digits.
+ * For example, 153 = 1^3 + 5^3 + 3^3
+ */
+public class ArmstrongNuber {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        
+        System.out.print("Enter a number to check if it's an Armstrong number: ");
+        int number = scanner.nextInt();
+        
+        boolean isArmstrong = isArmstrongNumber(number);
+        
+        if (isArmstrong) {
+            System.out.println(number + " is an Armstrong number.");
+        } else {
+            System.out.println(number + " is not an Armstrong number.");
         }
-
-        public static boolean is_armsstrong_number(int n) {
-            int d = countdigit(n);
-            int sum = 0;
-            int p = n;
-            while (n > 0) {
-                int rem = n % 10;
-                sum = (int) (sum + Math.pow(rem, d));
-                n = n / 10;
-            }
-            if (sum == p) {
-                return true;
-
-            } else {
-                return false;
-            }
-
-        }
-
-        public static int countdigit(int n) {
-            int count = 0;
-            while (n > 0) {
-
-                count++;
-                n = n / 10;
-
-            }
-            return count;
-
-        }
-
+        
+        scanner.close();
     }
+
+    /**
+     * Checks if a number is an Armstrong number
+     * 
+     * @param number the number to check
+     * @return true if the number is an Armstrong number, false otherwise
+     */
+    public static boolean isArmstrongNumber(int number) {
+        // Get the number of digits in the number
+        int digitCount = countDigits(number);
+        
+        int sum = 0;
+        int originalNumber = number;
+        
+        // Calculate the sum of each digit raised to the power of digit count
+        while (number > 0) {
+            int remainder = number % 10;
+            sum += Math.pow(remainder, digitCount);
+            number /= 10;
+        }
+        
+        // Check if the sum equals the original number
+        return sum == originalNumber;
+    }
+
+    /**
+     * Counts the number of digits in a number
+     * 
+     * @param number the number to count digits of
+     * @return the number of digits
+     */
+    public static int countDigits(int number) {
+        int count = 0;
+        
+        while (number > 0) {
+            count++;
+            number /= 10;
+        }
+        
+        return count;
+    }
+}
