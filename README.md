@@ -52,6 +52,8 @@ This repository serves as a collection of Java implementations for fundamental d
 
 ### ArrayList and Wrapper Classes
 - ArrayList usage (`Lecture_24_ArrayList_Wrapper/`)
+- ArrayList traversal
+- ArrayList working(for each loop )
 - Auto-boxing, unboxing
 - Wrapper class implementations
 
