@@ -1,23 +1,54 @@
 package lecture_11_Arrays;
 
+/**
+ * This class demonstrates how to reverse the order of elements in an array
+ */
 public class ReverseNo {
     public static void main(String[] args) {
-        int[] arr = {1,2,3,4,5};
-        reverse(arr);
-        for(int i =0 ;i <arr.length;i++){
-            System.out.print(arr[i] + " ");
-        }
+        // Sample array to reverse
+        int[] array = {1, 2, 3, 4, 5};
         
+        System.out.print("Original array: ");
+        printArray(array);
+        
+        // Reverse the array
+        reverse(array);
+        
+        System.out.print("Reversed array: ");
+        printArray(array);
     }
-    public static void reverse(int[] arr){
-        int i = 0;
-        int j = arr.length-1;
-        while(i < j){
-            int temp = arr[i];
-            arr[i] = arr[j];
-            arr[j] = temp;
-            i++;
-            j--;
+    
+    /**
+     * Reverses the order of elements in an array in-place
+     * 
+     * @param array the array to be reversed
+     */
+    public static void reverse(int[] array) {
+        int start = 0;
+        int end = array.length - 1;
+        
+        // Swap elements from both ends until we reach the middle
+        while (start < end) {
+            // Swap elements at start and end positions
+            int temp = array[start];
+            array[start] = array[end];
+            array[end] = temp;
+            
+            // Move indices inward
+            start++;
+            end--;
         }
+    }
+    
+    /**
+     * Helper method to print an array
+     * 
+     * @param array the array to be printed
+     */
+    private static void printArray(int[] array) {
+        for (int i = 0; i < array.length; i++) {
+            System.out.print(array[i] + " ");
+        }
+        System.out.println();
     }
 }

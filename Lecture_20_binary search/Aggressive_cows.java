@@ -1,5 +1,3 @@
-package Lecture_20;
-
 import java.util.Scanner;
 import java.util.Arrays;
 // https://www.spoj.com/problems/AGGRCOW/
