@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class MirrorPatternFirst {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
         int n = scn.nextInt(); // Number of rows for the upper part of the pattern
         int row = 1;
         int star = n;      // Number of stars in the first row

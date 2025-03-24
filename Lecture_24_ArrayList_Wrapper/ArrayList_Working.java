@@ -18,6 +18,18 @@ public class ArrayList_Working {
             System.out.print(ll.get(i) + " ");
         }
 
+        //using for each loop
+        System.out.println();
+        for(int jomankareworkhlo : ll){
+            System.out.print( jomankareworkhlo + " ");
+            // System.out.print( System.lineSeparator()+ jomankareworkhlo + " ");
+        }
+            System.out.println();
+        char[] a = {'a' ,'b','c'};
+        for(char ch : a){
+            System.out.print(ch + " ");
+        }
+
     }
 
 }

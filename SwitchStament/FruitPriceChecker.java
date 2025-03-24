@@ -11,6 +11,7 @@ import java.util.Scanner;
 public class FruitPriceChecker {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        scanner.close();
         
         System.out.println("Enter a fruit name (Apple, Banana, Mango, Orange):");
         String fruit = scanner.nextLine();

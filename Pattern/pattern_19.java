@@ -3,6 +3,7 @@ import java.util.Scanner;
 public class pattern_19 {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
+        System.out.print("Enter the number of rows (odd number): ");
         int n = scn.nextInt();
         int row = 1;
         int star = n / 2 + 1;

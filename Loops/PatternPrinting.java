@@ -2,6 +2,7 @@ import java.util.Scanner;
 public class PatternPrinting {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
+        scn.close();
         System.out.print("enter the number of rows");
         int n  = scn.nextInt();
 

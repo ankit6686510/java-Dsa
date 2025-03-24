@@ -1,6 +1,6 @@
 package lecture_11_Arrays;
 
-import java.util.Scanner;
+// import java.util.Scanner;
 
 /**
  * This class finds the second largest element in an array
