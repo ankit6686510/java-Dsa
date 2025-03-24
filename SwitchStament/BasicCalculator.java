@@ -33,12 +33,15 @@ public class BasicCalculator {
                     result = num1 / num2;
                     System.out.println("Result: " + result);
                 } else {
-                    System.out.println("Cannot divide by zero");
+                    System.out.println("Error: Division by zero");
                 }
                 break;
             default:
                 System.out.println("Invalid operator");
         }
+        
+        // Close scanner to prevent resource leak
+        scanner.close();
     }
 }
 // Problem 2: Basic Calculator

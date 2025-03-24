@@ -1,5 +1,3 @@
-package Pattern;
-
 import java.util.Scanner;
 
 public class pattern_19 {
@@ -42,5 +40,8 @@ public class pattern_19 {
             row++; // Move row increment inside the loop
             System.out.println(); // Move to the next line after each row
         }
+        
+        // Close scanner to prevent resource leak
+        scn.close();
     }
 }

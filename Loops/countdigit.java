@@ -1,10 +1,20 @@
-public class CountDigits {
-    public int countDigits(int n) {
-        int count = 0; // Step 1: Initialize count to 0
-        while (n != 0) { // Step 2: Loop until n is 0
-            n /= 10; // Step 3: Remove last digit from n
-            count++; // Step 4: Increment count
+import java.util.Scanner;
+
+public class countdigit {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+        
+        int count = 0;
+        while (num != 0) {
+            num /= 10;
+            count++;
         }
-        return count; // Step 5: Return digit count
+        
+        System.out.println("Number of digits: " + count);
+        
+        // Close scanner to prevent resource leak
+        scanner.close();
     }
 }

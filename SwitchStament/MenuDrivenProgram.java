@@ -18,15 +18,18 @@ public class MenuDrivenProgram {
         System.out.println("2: Greet Me");
         System.out.println("3: Quit");
         
-        System.out.println("Enter your choice:");
+        System.out.print("Enter your choice (1-3): ");
         int choice = scanner.nextInt();
         
         switch (choice) {
             case 1:
-                System.out.println("Today's date is " + java.time.LocalDate.now());
+                System.out.println("Today's date is: " + new java.util.Date());
                 break;
             case 2:
-                System.out.println("Hello! Hope you’re having a great day!");
+                scanner.nextLine(); // Clear buffer
+                System.out.print("Enter your name: ");
+                String name = scanner.nextLine();
+                System.out.println("Hello, " + name + "!");
                 break;
             case 3:
                 System.out.println("Quitting the program...");
@@ -34,5 +37,8 @@ public class MenuDrivenProgram {
             default:
                 System.out.println("Invalid choice");
         }
+        
+        // Close scanner to prevent resource leak
+        scanner.close();
     }
 }

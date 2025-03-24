@@ -21,5 +21,8 @@ public class SymmetricalTriangle {
             }
             System.out.println();
         }
+        
+        // Close scanner to prevent resource leak
+        scn.close();
     }
 }

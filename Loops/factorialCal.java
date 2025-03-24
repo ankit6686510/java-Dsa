@@ -10,5 +10,8 @@ public class factorialCal {
             factorial *= i;
         }
         System.out.println("factoial of " + n + "is " + factorial);
+        
+        // Close scanner to prevent resource leak
+        scn.close();
     }
 }

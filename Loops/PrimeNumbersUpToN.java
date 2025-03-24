@@ -19,5 +19,8 @@ public class PrimeNumbersUpToN {
                 System.out.print(i + " ");
             }
         }
+        
+        // Close scanner to prevent resource leak
+        scanner.close();
     }
 }

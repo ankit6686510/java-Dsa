@@ -45,6 +45,7 @@ Thank you for using the parking management system!
 public class ParkingManagementSystem {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        scanner.close();
         int level, hours, totalHours = 0;
         int ratePerHour = 0;
         boolean continueSession = true;

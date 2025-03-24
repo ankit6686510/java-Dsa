@@ -12,6 +12,9 @@ public class reversingNumber {
             num /= 10;
         }
         System.out.println("reversed number: " + reversed);
+        
+        // Close scanner to prevent resource leak
+        scn.close();
     }
 
     

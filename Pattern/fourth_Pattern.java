@@ -1,5 +1,3 @@
-package Pattern;
-
 import java.util.Scanner;
 
 public class fourth_Pattern {
@@ -28,5 +26,8 @@ public class fourth_Pattern {
             space--;
             star++; 
         }
+        
+        // Close scanner to prevent resource leak
+        sc.close();
     }
 }

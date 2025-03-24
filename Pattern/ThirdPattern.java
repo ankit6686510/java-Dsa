@@ -1,5 +1,3 @@
-package Pattern;
-
 import java.util.Scanner;
 
 public class ThirdPattern {
@@ -19,6 +17,9 @@ public class ThirdPattern {
             row++;
             star--;                 // Decrease the number of stars for the next row
         }
+        
+        // Close scanner to prevent resource leak
+        scn.close();
     }
 }
  

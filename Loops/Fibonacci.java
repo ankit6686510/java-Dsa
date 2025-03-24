@@ -25,7 +25,9 @@ public class Fibonacci {
         //     a = b;
         //     b = c;
         // }
-        // scn.close();
+        
+        // Close scanner to prevent resource leak
+        scn.close();
     }
     
 }

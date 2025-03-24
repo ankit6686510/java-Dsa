@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class HourglassVerticalMirror {
+public class HourGlass {
     public static void main(String[] args) {
         Scanner scn = new Scanner(System.in);
         System.out.print("Enter the number of rows: ");
@@ -27,5 +27,8 @@ public class HourglassVerticalMirror {
             }
             System.out.println();
         }
+        
+        // Close scanner to prevent resource leak
+        scn.close();
     }
-}
+} 

@@ -18,5 +18,8 @@ public class NumberPyramid {
             }
             System.out.println();
         }
+        
+        // Close scanner to prevent resource leak
+        scanner.close();
     }
 }

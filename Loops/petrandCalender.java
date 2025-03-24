@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class PetrAndCalendar {
+public class petrandCalender {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int daysInMonth = sc.nextInt(); // Days in the month

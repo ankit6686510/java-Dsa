@@ -14,5 +14,8 @@ public class SumOfDigits {
         }
 
         System.out.println("Sum of digits: " + sum);
+        
+        // Close scanner to prevent resource leak
+        scanner.close();
     }
 }
