@@ -1,7 +1,7 @@
 /**
- * This class solves the Book Allocation problem using binary search
- * Problem: Given an array of book pages and number of students,
- * allocate books to students such that maximum pages assigned to a student is minimized.
+  This class solves the Book Allocation problem using binary search
+  Problem: Given an array of book pages and number of students,
+  allocate books to students such that maximum pages assigned to a student is minimized.
  */
 public class Book_Allocation {
     public static void main(String[] args) {
@@ -12,13 +12,7 @@ public class Book_Allocation {
                           findMinimumPages(pages, numStudents));
     }
     
-    /**
-     * Finds the minimum possible value of the maximum pages assigned to any student
-     * 
-     * @param pages array of page counts for each book
-     * @param numStudents number of students to allocate books to
-     * @return minimum possible value of maximum pages
-     */
+  
     public static int findMinimumPages(int[] pages, int numStudents) {
         // Binary search range
         int low = 0;
@@ -46,14 +40,7 @@ public class Book_Allocation {
         return result;
     }
     
-    /**
-     * Checks if it's possible to allocate books such that no student gets more than 'maxPages'
-     * 
-     * @param pages array of page counts for each book
-     * @param numStudents number of students to allocate books to
-     * @param maxPages maximum pages allowed per student
-     * @return true if allocation is possible, false otherwise
-     */
+
     public static boolean isPossibleAllocation(int[] pages, int numStudents, int maxPages) {
         int currentPages = 0;
         int studentsRequired = 1;
