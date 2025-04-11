@@ -11,9 +11,10 @@ public class Coin_permutation {
             System.out.println(ans);
             return;
         }
+        
         for(int i = 0 ; i < coin.length ; i++){
             if(amount >= coin[i]){
-                coinPermutaions(coin, amount-coin[i], ans + coin[i]);//changes will be in amount in frame
+                coinPermutaions(coin, amount-coin[i], ans + coin[i]  );//changes will be in amount in frame
             }
         }
     }

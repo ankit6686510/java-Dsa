@@ -10,7 +10,7 @@ public class Coin_combinations {
     public static void coinCombination(int[] coin, int amount, String ans, int idx) {
         if(amount == 0){
             System.out.println(ans);
-            return;
+            return; 
         }
 
         for(int i = idx; i < coin.length; i++){
