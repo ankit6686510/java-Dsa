@@ -19,7 +19,7 @@ public class List_palindrome_partitioning {
         }
         for (int i = 1; i <= ques.length(); i++) {
             String s = ques.substring(0, i);
-            if (isPalindrome(s)) {
+            if (isPalindrome(s) ) {
                 list.add(s);
                 partitioning(ques.substring(i), list, ans);
                 list.remove(list.size() - 1);
