@@ -1,7 +1,7 @@
 package Lecture_28_Recursion;
 
 public class Count_SubSequnce {
-    ublic static void main(String[] args) {
+    public static void main(String[] args) {
 		
 		String ques = "abc";
 		System.out.println("\n"+PrintSubSeqnue(ques, ""));

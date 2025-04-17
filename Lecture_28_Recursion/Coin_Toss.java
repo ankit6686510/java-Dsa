@@ -1,6 +1,6 @@
 package Lecture_28_Recursion;
 
-public class Coin_toss {
+public class Coin_Toss {
     public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		int n = 3;

@@ -1,4 +1,5 @@
-public class maximum_k_subaaray {
+public class maximum_k_subarray  // if file name is maximum_k_subarray.java
+{
     //https://leetcode.com/problems/subarray-product-less-than-k/
     //to find=> k size k uss subarry ka sum jo maximum ho
     public static void main(String[] args) {
