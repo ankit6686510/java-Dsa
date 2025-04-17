@@ -4,6 +4,7 @@ public class intro {
     public static void main(String[] args) {
         long start = System.currentTimeMillis(); // corrected here
         for(int i = 0; i < 1000000; i++) {
+            System.out.println(i);
             // do nothing
         }
         long end = System.currentTimeMillis(); // corrected here
