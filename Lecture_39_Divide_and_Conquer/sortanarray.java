@@ -1,4 +1,4 @@
-package Divide_and_Conquer;
+package Lecture_39_Divide_and_Conquer;
 
 public class sortanarray {
     private void quickSort(int[] nums, int low, int high) {
