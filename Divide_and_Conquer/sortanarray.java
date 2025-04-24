@@ -8,6 +8,7 @@ public class sortanarray {
             quickSort(nums, pi + 1, high);
         }
     }
+    // Time complexity: O(n log n)
 
     private int partition(int[] nums, int low, int high) {
         int pivot = nums[high];
