@@ -23,7 +23,9 @@ public class PalindromeAndSubstring {
         }
     }
 
-    public static boolean isPalindrome(String str) {
+    public static boolean isPalindrome(String str) { 
+        //in case if i have to return i can use int type than int count  = 0 ;
+        //and will return the count
         int i = 0;
         int j = str.length() - 1;
 

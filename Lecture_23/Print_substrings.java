@@ -1,8 +1,5 @@
 package Lecture_23;
 
-/**
- * This class demonstrates how to print all possible substrings of a string
- */
 public class Print_substrings {
     public static void main(String[] args) {
         String str = "84513";
@@ -10,11 +7,7 @@ public class Print_substrings {
         printSubstrings(str);
     }
     
-    /**
-     * Prints all possible substrings of a given string
-     * 
-     * @param input the input string to process
-     */
+    // Function to print all substrings
     public static void printSubstrings(String input) {
         // Iterate through all possible substring lengths
         for (int len = 1; len <= input.length(); len++) {
