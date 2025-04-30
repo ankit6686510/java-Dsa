@@ -16,7 +16,7 @@ public class student {
     public static void fun(){
         // System.out.println(count);
 
-        System.out.println("m mure maje m hu");
+        System.out.println("m maje maje m hu");
     }
     static {
         System.out.println(" aur bhai kya chal rha hai ");
