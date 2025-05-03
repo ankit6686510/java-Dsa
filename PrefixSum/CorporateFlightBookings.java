@@ -16,7 +16,7 @@ public class CorporateFlightBookings {
         // Final answer array (initially sab flights pe 0 booking)
         int[] ans =  new int[n];
 
-        // Har booking ko process karenge
+        // Har booking ko process karenge ke difference array mein
         for(int i = 0; i < bookings.length; i++) {
             int first = bookings[i][0];  // booking start flight number
             int last = bookings[i][1];   // booking end flight number
