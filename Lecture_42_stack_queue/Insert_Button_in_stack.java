@@ -25,3 +25,4 @@ public class Insert_Button_in_stack {
         st.push(ii);
     }
 }
+ //tc = o(N)

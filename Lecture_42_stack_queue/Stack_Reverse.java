@@ -20,8 +20,8 @@ public class Stack_Reverse {
             return;
         }
         int ii =  st.pop();
-        Reverse(st);
-        Insert_Buttom(st , ii);
+        Reverse(st); // recursive call 
+        Insert_Buttom(st , ii); // 2nd recursive call
     }
     public static void Insert_Buttom(Stack<Integer> st , int item){
         if(st.isEmpty()){
@@ -33,3 +33,4 @@ public class Stack_Reverse {
         st.push(ii);
     }
 }
+//tc = o(n^2) 2 recursive call lag rhi hai
