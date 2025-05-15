@@ -61,6 +61,6 @@ public class Delete_Node_in_a_BST_RightSubtree {
 
 
 /*
- * min() function:
+min() function:
 Simple loop se leftmost node tak jaate hain because smallest value BST ke right subtree ke leftmost node mein hoti hai.
  */
