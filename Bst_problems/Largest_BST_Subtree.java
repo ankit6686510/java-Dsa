@@ -1,9 +1,8 @@
 
-public class Validate_Bst {
+public class Largest_BST_Subtree {
 
     public class TreeNode {
 
-        //https://leetcode.com/problems/validate-binary-search-tree/description/
         int val;
         TreeNode left;
         TreeNode right;
@@ -22,18 +21,10 @@ public class Validate_Bst {
         }
     }
 
-    class BstPair {
-
-        boolean isbst = true;
-        long min = Long.MAX_VALUE;
-        long max = Long.MIN_VALUE;
-
-    }
-
     class Solution {
 
-        public boolean isValidBST(TreeNode root) {
-            return validbst(root).isbst;
+        public int largestBSTSubtree(TreeNode root) {
+            return validbst(root).size;
         }
 
         public BstPair validbst(TreeNode root) {
@@ -47,18 +38,23 @@ public class Validate_Bst {
             sbstp.min = Math.min(root.val, Math.min(lbstp.min, rbstp.min));
             sbstp.max = Math.max(root.val, Math.max(lbstp.max, rbstp.max));
             sbstp.isbst = lbstp.isbst && rbstp.isbst && root.val > lbstp.max && root.val < rbstp.min;
-
+            if (sbstp.isbst) {
+                sbstp.size = lbstp.size + rbstp.size + 1;
+            } else {
+                sbstp.size = Math.max(lbstp.size, rbstp.size);
+            }
             return sbstp;
 
         }
+    }
 
-        class BstPair {
+    class BstPair {
 
-            boolean isbst = true;
-            long min = Long.MAX_VALUE;
-            long max = Long.MIN_VALUE;
+        boolean isbst = true;
+        long min = Long.MAX_VALUE;
+        long max = Long.MIN_VALUE;
+        int size = 0;
 
-        }
     }
 
 }
