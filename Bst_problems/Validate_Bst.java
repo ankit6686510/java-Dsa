@@ -32,11 +32,15 @@ public class Validate_Bst {
                 return new BstPair();
             }
             BstPair lbstp =  validbst(root.left);
-            BstPair rbstp =  validbst(rootright); 
+            BstPair rbstp =  validbst(root.right); 
             BstPair sbstp = new BstPair();
+
             sbstp.min =  Math.min(root.val , Math.min(lbstp.min , rbstp.min));           
             sbstp.max =  Math.max(root.val , Math.max(lbstp.max , rbstp.max));           
+
             sbstp.isbst = lbstp.isbst && rbstp.isbst && root.val > lbstp.max && root.val < rbstp.min;
+            
+            return sbstp;
         }
     }
 }
