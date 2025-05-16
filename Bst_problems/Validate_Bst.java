@@ -1,5 +1,6 @@
 public class Validate_Bst {
     public class TreeNode {
+        //https://leetcode.com/problems/validate-binary-search-tree/description/
 		int val;
 		TreeNode left;
 		TreeNode right;
@@ -39,7 +40,7 @@ public class Validate_Bst {
             sbstp.max =  Math.max(root.val , Math.max(lbstp.max , rbstp.max));           
 
             sbstp.isbst = lbstp.isbst && rbstp.isbst && root.val > lbstp.max && root.val < rbstp.min;
-            
+
             return sbstp;
         }
     }
