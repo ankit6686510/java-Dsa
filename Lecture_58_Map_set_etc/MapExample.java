@@ -3,7 +3,7 @@ import java.util.*;
 public class MapExample {
     public static void main(String[] args) {
         Map<String, Integer> map = new HashMap<>();
-        // Map<key, value> map = new HashMap<>();
+        // Map<key, value> map = new HashMap<>();// Java 8
 
 
         // Add key-value pairs
