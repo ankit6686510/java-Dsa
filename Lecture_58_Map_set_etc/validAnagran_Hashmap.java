@@ -46,5 +46,6 @@ public class validAnagran_Hashmap {
 
         return true;
     }
+    StringBuilder sb = new StringBuilder();
     
 }
