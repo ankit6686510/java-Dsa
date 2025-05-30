@@ -4,6 +4,7 @@ public class MedianSortedArrays {
         int[] nums2 = {2};
         System.out.println(findMedianSortedArrays(nums1, nums2));
     }
+    
      public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int n1 = nums1.length;
         int n2 = nums2.length;
