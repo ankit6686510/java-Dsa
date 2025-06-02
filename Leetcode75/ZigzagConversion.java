@@ -5,6 +5,7 @@ public class ZigzagConversion{
             return s;
         }
         StringBuilder sb =  new StringBuilder();//bcz it took o(n) tc
+        //if we perform opern on string it will take 0(n^2)
 
         for(int i = 0; i < numRows ; i++){
             int idx =  i;
