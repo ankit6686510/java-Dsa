@@ -1,4 +1,4 @@
-public class string_to_integer {
+public class string_to_integer{
     public int myAtoi(String s) {
         int i = 0, n = s.length();
         int sign = 1;
