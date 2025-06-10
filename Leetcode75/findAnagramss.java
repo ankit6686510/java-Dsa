@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
-//   https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
-public class find_all_anagram_in_a_string {
+// https://leetcode.com/problems/find-all-anagrams-in-a-string/description/
+public class findAnagramss{
    
     public List<Integer> findAnagrams(String s, String p) {
 
