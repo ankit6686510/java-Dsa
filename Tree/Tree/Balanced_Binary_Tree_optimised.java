@@ -1,7 +1,8 @@
 package Tree;
 
 public class Balanced_Binary_Tree_optimised {
-     public class TreeNode {
+
+    public class TreeNode {
 
         int val;
         TreeNode left;
@@ -20,35 +21,35 @@ public class Balanced_Binary_Tree_optimised {
             this.right = right;
         }
     }
-    
 
+    class Solution {
 
-     class Solution {
-    public boolean isBalanced(TreeNode root) {
-        
-        return Balanced(root).isbal;
+        public boolean isBalanced(TreeNode root) {
+
+            return Balanced(root).isbal;
         }
-        class BalancePair{
+
+        class BalancePair {
+
             boolean isbal = true;
             int ht = -1;
         }
-        public BalancePair Balanced(TreeNode root){
-            if(root == null){
+
+        public BalancePair Balanced(TreeNode root) {
+            if (root == null) {
                 return new BalancePair();
 
             }
-            BalancePair lbp =  Balanced(root.left);
-            BalancePair rbp =  Balanced(root.right);
-            BalancePair sbp = new  BalancePair();
-             
-             sbp.ht = Math.max(lbp.ht , rbp.ht) +1;
-             boolean sb =  Math.abs(lbp.ht - rbp.ht) <= 1;
-             sbp.isbal =  lbp.isbal && rbp.isbal && sb;
-             return sbp;
+            BalancePair lbp = Balanced(root.left);
+            BalancePair rbp = Balanced(root.right);
+            BalancePair sbp = new BalancePair();
+
+            sbp.ht = Math.max(lbp.ht, rbp.ht) + 1;
+            boolean sb = Math.abs(lbp.ht - rbp.ht) <= 1;
+            sbp.isbal = lbp.isbal && rbp.isbal && sb;
+            return sbp;
         }
 
-        
-    
-}
-    
+    }
+
 }
