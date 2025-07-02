@@ -1,10 +1,12 @@
+
 import java.util.ArrayList;
 import java.util.HashMap;
 // https://leetcode.com/problems/intersection-of-two-arrays-ii/description/
 
 public class intersectionoftwoarray {
-    public static void main(String[] args) {
-		
+
+	public static void main(String[] args) {
+
 		int[] arr1 = { 2, 3, 1, 4, 3, 2, 1, 5, 7, 8, 11, 13, 7, 9 };
 		int[] arr2 = { 2, 5, 6, 7, 1, 1, 5, 77, 8, 9, 12, 1, 1, 45, 1, 1 };
 		// System.out.println(IntersectionoftwoArray(arr1, arr2));
@@ -38,5 +40,5 @@ public class intersectionoftwoarray {
 		}
 		return ans;
 	}
-    
+
 }
