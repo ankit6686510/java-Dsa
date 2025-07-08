@@ -1,6 +1,7 @@
 package Hashmap;
 
 import java.util.*;
+//leetcode 706
 
 public class Design_Hashmap {
 
