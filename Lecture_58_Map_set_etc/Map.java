@@ -2,7 +2,7 @@ import java.util.*;
 
 public class Map {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         // Map<String,Integer> map =  new HashMap<>();//parent class jaise hum list  = new arraylist krte the
         HashMap<String, Integer> map = new HashMap<>();
         map.put("ankit", 100);
