@@ -1,4 +1,5 @@
 import java.util.*;
+//https://leetcode.com/problems/ransom-note/description/
 public class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
         // Step 1: Count frequencies of characters in magazine
