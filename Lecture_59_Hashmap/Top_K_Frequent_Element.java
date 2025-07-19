@@ -6,7 +6,7 @@ public class Top_K_Frequent_Element {
 
     public int[] topKFrequent(int[] nums, int k) {
 
-        // Step 1: Count the frequency of each element
+    
         Map<Integer, Integer> frequencyMap = new HashMap<>();
         for (int num : nums) {
             // Increase the count for num
