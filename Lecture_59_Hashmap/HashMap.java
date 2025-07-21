@@ -12,12 +12,12 @@ public class HashMap {
 
     public HashMap(int n) {
 
-        buk = new Node[n];
+        buk = new Node[n]; //bucket size
     }
 
     public HashMap() {
 
-        this(4);
+        this(4); //aggruser ne nhi btya kitne size ka banana hai then 4 size ka bnaa do 
     }
 
     public void put(String key, Integer value) {
@@ -113,8 +113,8 @@ public class HashMap {
     }
 
     public int hashfun(String key) {
-        int idx = key.hashCode() % buk.length;
-        if (idx < 0) {
+        int idx = key.hashCode() % buk.length; //hascode negative bhi ho sakta hai
+        if (idx < 0) { //negative hascode ko positive bna do
             idx += buk.length;
         }
         return idx;
