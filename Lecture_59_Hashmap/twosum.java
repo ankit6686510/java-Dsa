@@ -1,6 +1,8 @@
 package Lecture_59_Hashmap;
 
 public class twosum {
+    // Time Complexity: O(n)
+    // Space Complexity: O(n)
 
     public int[] twoSum(int[] nums, int target) {
         // Create a HashMap to store number-index pairs
