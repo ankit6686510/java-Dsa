@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.*;
 package Lecture_59_Hashmap;
-
+//https://leetcode.com/problems/isomorphic-strings/description/
 public class isomorphicString_HASHMAP {
     class Solution {
     public boolean isIsomorphic(String s, String t) {
