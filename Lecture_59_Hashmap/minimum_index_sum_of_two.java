@@ -2,6 +2,7 @@ package Lecture_59_Hashmap;
 
 import java.util.ArrayList;
 import java.util.List;
+// https://leetcode.com/problems/minimum-index-sum-of-two-lists/
 
 public class minimum_index_sum_of_two {
     public String[] findRestaurant(String[] list1, String[] list2) {
