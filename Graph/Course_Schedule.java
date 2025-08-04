@@ -1,6 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
+// https://leetcode.com/problems/course-schedule/description/
 public class Course_Schedule {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         List<List<Integer>> graph = new ArrayList<>();
