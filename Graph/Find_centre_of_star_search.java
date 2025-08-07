@@ -1,4 +1,5 @@
 public class Find_centre_of_star_search {
+    // https://leetcode.com/problems/find-center-of-star-graph/description/
     public int findCenter(int[][] edges) {
         // Get the first two edges
         int a = edges[0][0];
